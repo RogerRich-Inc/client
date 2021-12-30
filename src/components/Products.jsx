@@ -22,7 +22,7 @@ const Products = ({cat,filters,sort}) => {
                 const res = await publicRequest.get(
                    cat 
                      ? `/products?category=${cat}` 
-                     : "/api/products"
+                     : "/products"
                 );
                 setProducts(res.data);
             }catch(err){}
